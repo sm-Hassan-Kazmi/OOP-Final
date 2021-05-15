@@ -1,0 +1,47 @@
+#include<iostream>
+using namespace std;
+class Employee
+{
+	protected:
+	string name;
+	int id;
+	int salary;
+	public:
+		Employee()
+		{
+			name="xxxx";
+			id=0000;
+		}
+		Employee(string name, int id)
+		{
+			this->name=name;
+			this->id=id;
+		}
+		virtual void set_salary(int salary)= 0;
+};
+class Admin: public Employee
+{
+	public:
+	Admin()
+	{
+		name="Admin";
+		id=0001;
+	}
+	void show_deets()
+	{
+		Driver temp;
+		cout<<"Number Of Drivers hired: "<<temp.n_driver<<endl;
+		cout<<
+	}
+		
+};
+class Driver: public Employee
+{
+	public:
+	static int n_driver;
+};
+int Driver::n_driver=0;
+int main()
+{
+	
+}
